@@ -1,0 +1,42 @@
+
+def solution(n)
+  # write your code in Ruby 2.2
+  #00001001001
+  my_array = []
+bin_gap=0
+  ctr=0
+  count ='y'
+   while n>1
+     if n%2 == 0
+       my_array.push 0
+       if count =='y'
+         ctr=ctr+1
+
+       end
+     else
+       my_array.push 1
+
+       count='y'
+       if ctr > bin_gap
+         bin_gap=ctr
+         p "ctr is #{ctr}"
+       end
+       ctr=0
+     end
+     p n
+    n=n/2
+
+
+
+   end
+  if ctr > bin_gap
+    bin_gap = ctr
+  end
+  my_array.push 1
+  p my_array
+  p bin_gap
+  p ctr
+  p bin_gap
+end
+
+p solution(1041)

@@ -1,0 +1,33 @@
+def solution(a)
+  # write your code in Ruby 2.2
+
+ a_length = a.length-1
+  ctr=0
+
+  sum = 0
+ while ctr <=a_length
+   p "traversing through #{ctr} and value  is #{a[ctr]}sum is #{sum+=a[ctr]} "
+   # draw the dice till you get a 6
+   for i in 1..6
+     if ctr+i < a_lenght
+       if ctr[i] >0
+        sum +=ctr[i]
+       else
+         
+       end
+
+     else
+       # for the last number check
+
+
+     end
+
+
+   end
+   ctr+=1
+ end
+sum
+end
+
+a=[1, -2, 0, 9, -1, -2,5,6,7,8,9,0,1,2,3,4,5]
+p solution a
